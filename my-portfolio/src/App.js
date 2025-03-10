@@ -1,32 +1,37 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./App.css";
+import "./App.css"; // Ensure you have App.css for styling
 
 function App() {
   return (
-    <div className="container">
-      <motion.header initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <h1>My Portfolio</h1>
-        <p>Freelance Full-Stack Developer & IT Support</p>
-      </motion.header>
+    <div className="portfolio-container">
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        My Portfolio
+      </motion.h1>
 
-      <section className="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm a tech-savvy problem solver skilled in web development, IT support, and cybersecurity.</p>
-      </section>
+      <motion.p
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Welcome to my portfolio! Here are some of my projects.
+      </motion.p>
 
-      <section className="projects">
-        <h2>Projects</h2>
-        <p>Check out some of my work below.</p>
-        {/* Add your project links here */}
-      </section>
-
-      <section className="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-      </section>
+      <motion.div
+        className="project-image"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <img src="your-image-url.jpg" alt="Portfolio project" />
+      </motion.div>
     </div>
   );
 }
 
 export default App;
+
