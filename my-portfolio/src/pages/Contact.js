@@ -1,6 +1,6 @@
 
 import "../styles/Contact.css";
-import "./styles/global.css";
+import {motion} from "framer-motion";
 
 
 const Contact = () => {
