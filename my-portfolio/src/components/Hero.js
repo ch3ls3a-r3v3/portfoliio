@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "components/styles/App.css";
+
 
 const Hero = () => {
   return (
