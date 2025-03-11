@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../styles/Hero.css";
+import "../styles/App.css";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Hi, I'm <span className="highlight">Your Name</span>
+        Hi, I'm <span className="highlight">Chelsea</span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
