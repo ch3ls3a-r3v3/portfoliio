@@ -159,4 +159,32 @@ input, textarea {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 255, 198, 0.7);
   }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: cyan;
+  }
   
