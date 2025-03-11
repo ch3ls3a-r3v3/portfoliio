@@ -14,10 +14,9 @@ const Projects = () => {
           <motion.div
             className="project-card"
             key={index}
-            whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 255, 198, 0.5)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px cyan" }}
             transition={{ duration: 0.3 }}
           >
-            <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.tech}</p>
           </motion.div>
@@ -28,5 +27,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
