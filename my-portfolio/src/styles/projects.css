@@ -1,0 +1,30 @@
+.projects {
+    padding: 80px 20px;
+    text-align: center;
+    background: #161b22;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .project-card h3 {
+    color: #00FFC6;
+  }
+  
