@@ -1,5 +1,5 @@
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
+import Hero from "./Hero";
+import Projects from "./Projects";
 import Contact from "../components/Contact";
 
 const Home = () => {
